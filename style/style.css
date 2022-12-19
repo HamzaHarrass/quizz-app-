@@ -56,4 +56,15 @@ span:nth-child(1),
 span:nth-child(9),
 span:nth-child(5) {
   font-size: 110px;
+}
+
+a {
+  text-decoration: none;
+  color: #d5e2d6;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #4e8953;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
