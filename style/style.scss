@@ -1,53 +1,62 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 body {
-	background: #020202;
-	height: 100%;
+  font-family:"pacifico",sans-serif;
+  background: rgb(193,71,233);
+  background: radial-gradient(circle, rgba(193,71,233,1) 6%, rgba(229,184,244,1) 100%);
+  
+
+//   background-repeat:no-repeat;
+//   background-size:cover;
+// font-size: 100%;
+}
+.ntientimg{
+    position: relative;
+    z-index: 1;
+    width: 5%;
+}
+.nav_img{
+    display: flex;
+    justify-content:center;
+}
+.custom-shape-divider-top-1671480786 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-h1 {
-	font-size: 20vw;
-	top: 50%;
-	left: 50%;
-	margin: 0;
-	transform: translate(-50%, -50%);
-	position: fixed;
-	font-weight: 900;
-	white-space: nowrap;
-	font-family: 'Vaba';
-	color: #d5274e;
-	text-shadow: 
-		-1px -1px 0 white, 
-		1px -1px 0 white, 
-		-1px 1px 0 white, 
-		1px 1px 0 white, 
-		-2px 2px 0 #fcde8b, 
-		2px 2px 0 #fcde8b,
-		-3px 3px 0 #fcde8b, 
-		3px 3px 0 #fcde8b;
-	
-	&:before {
-		content: attr(data-heading);
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		color: #000;
-		clip-path: polygon(0% 30%, 6% 27%, 37% 47%, 49% 32%, 63% 46%, 84% 28%, 98% 56%, 89% 95%, 45% 70%, 14% 75%);
-	}
-
-	&:after {
-		content: attr(data-heading);
-		position: fixed;
-		left: 0;
-		top: 0;
-		overflow: hidden;
-		width: 100%;
-		height: 100%;
-		color: #0b5e51;
-		clip-path: polygon(0% 18%, 8% 27%, 37% 47%, 49% 32%, 63% 46%, 84% 28%, 98% 56%, 89% 95%, 45% 70%, 17% 75%);
-		transform: scale(1.01, .85) translate(-1%, 1%);
-	}
+.custom-shape-divider-top-1671480786 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 250px;
 }
 
+.custom-shape-divider-top-1671480786 .shape-fill {
+    fill: #6d1a89;
+}
+
+.circle {
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: #4e8953;
+    margin-top: 180px;
+  }
+  
+  h1 {
+    color: #d5e2d6;
+    text-align: center;
+    line-height: 50px;
+    margin-top: -300px;
+  }
+  span:nth-child(1),
+  span:nth-child(9),
+  span:nth-child(5) {
+    font-size: 110px;
+  }
+  
