@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 body {
   font-family: "pacifico", sans-serif;
-  background: rgb(193, 71, 233);
-  background: radial-gradient(circle, rgb(193, 71, 233) 6%, rgb(229, 184, 244) 100%);
+  background: #3F0071;
+  background: radial-gradient(circle, #3F0071 6%, #150050 100%);
 }
 
 .ntientimg {
   position: relative;
   z-index: 1;
-  width: 5%;
+  width: 6%;
 }
 
 .nav_img {
@@ -33,7 +33,7 @@ body {
 }
 
 .custom-shape-divider-top-1671480786 .shape-fill {
-  fill: #6d1a89;
+  fill: #150050;
 }
 
 .circle {
@@ -42,7 +42,7 @@ body {
   width: 300px;
   border-radius: 100%;
   background: #4e8953;
-  margin-top: 180px;
+  margin-top: 80px;
 }
 
 h1 {
@@ -67,4 +67,11 @@ a {
   font-size: 20px;
   display: flex;
   justify-content: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #fffcfc;
+  margin-top: 70px;
 }/*# sourceMappingURL=style.css.map */
