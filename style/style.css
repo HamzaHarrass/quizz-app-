@@ -27,14 +27,12 @@ body {
   overflow: hidden;
   line-height: 0;
 }
-
 .custom-shape-divider-top-1671480786 svg {
   position: relative;
   display: block;
   width: calc(300% + 1.3px);
   height: 250px;
 }
-
 .custom-shape-divider-top-1671480786 .shape-fill {
   fill: #150050;
 }
@@ -83,4 +81,48 @@ p {
 #secondsdisplay {
   font-size: 50px;
   color: #fffcfc;
+  margin-top: 15%;
+  display: none;
+}
+
+#guide {
+  font-size: 20px;
+  height: auto;
+  width: 550px;
+  background: #aab50c;
+  border-radius: 20px;
+  margin-top: 15%;
+}
+#guide h2 {
+  text-align: center;
+  color: #3F0071;
+}
+#guide h4 {
+  text-align: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#guide #boutton {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  gap: 10px;
+}
+#guide #boutton #exit {
+  background-color: #3F0071;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+#guide #boutton #play {
+  background-color: #3F0071;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
