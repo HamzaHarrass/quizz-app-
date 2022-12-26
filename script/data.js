@@ -1,87 +1,107 @@
 /* 
     This file contains an array of objects as tasks, to be loaded in the execution.
 */
-var questions = 
+var questions  = 
       [
         {
-          question: "Que signifie PHP?",
-          choice1: "Personal Home Page Hypertext Preprocessor", 
-          choice2: "Pretext Hypertext Processor", 
-          choice3: "Preprocessor Home Page", 
-          choice4: "Pretext Hypertext Processor",
+          question: "1. Que signifie PHP?",
+          answers: [
+            "Personal Home Page Hypertext Preprocessor",
+            "Pretext Hypertext Processor",
+            "Preprocessor Home Page",
+            "Pretext Hypertext Processor"
+          ],
           answer: 1
         },
         
         {
-          question: "Les fichiers PHP ont l’extension …. ?",
-          choice1: ".html", 
-          choice2: ".xml", 
-          choice3: ".php", 
-          choice4: ".ph",
+          question: "2. Les fichiers PHP ont l’extension …. ?",
+          answers: [
+            ".html",
+            ".xml",
+            ".php",
+            ".ph"
+          ], 
           answer: 3
         },
         {
-          question: "Un script PHP devrait commencer par ___ ?",
-          choice1: "<php", 
-          choice2: "<?", 
-          choice3: "<?php", 
-          choice4: "php",
+          question: "3. Un script PHP devrait commencer par ___ ?",
+          answers: [
+            "<php",
+            "<?",
+            "<?php",
+            "php"
+          ],
           answer: 3
         },
         {
-          question: "Quelle version de PHP a introduit Try/catch Exception?",
-          choice1: "PHP 4", 
-          choice2: "PHP 5", 
-          choice3: "PHP 5.3", 
-          choice4: "PHP 7.2",
+          question: "4. Quelle version de PHP a introduit Try/catch Exception?",
+          answers: [
+            "PHP 4",
+            "PHP 5",
+            "PHP 5.3",
+            "PHP 7.2"
+          ],
           answer: 2
         },
         {
-          question: "Les espaces de noms ou « namespaces » sont disponibles depuis quelle version ?",
-          choice1: "PHP 4", 
-          choice2: "PHP 5", 
-          choice3: "PHP 5.3", 
-          choice4: "PHP 6",
+          question: "5. Les espaces de noms ou « namespaces » sont disponibles depuis quelle version ?",
+          answers: [
+            "PHP 4",
+            "PHP 5",
+            "PHP 5.3",
+            "PHP 6"
+          ],
           answer: 4
         },
         {
-          question: "Laquelle des portées suivantes n’est pas prise en charge en PHP?",
-          choice1: "static", 
-          choice2: "final", 
-          choice3: "public", 
-          choice4: "friendly",
+          question: "6. Laquelle des portées suivantes n’est pas prise en charge en PHP?",
+          answers: [
+            "protected",
+            "private",
+            "public",
+            "friendly"
+          ],
           answer: 4
         },
         {
-          question: "Les variables membres d’une classe sont également appelées __________?",
-          choice1: "les attributs", 
-          choice2: "des propriétés", 
-          choice3: "des instances", 
-          choice4: "tous les réponses sont vrais",
+          question: "7. Les variables membres d’une classe sont également appelées __________?",
+          answers: [
+            "les attributs",
+            "des propriétés",
+            "des instances",
+            "tous les réponses sont vrais"
+          ],
           answer: 4
         },
         {
-          question: "Les méthodes sont également appelées des_______?",
-          choice1: "fonction membre", 
-          choice2: "instances", 
-          choice3: "objects", 
-          choice4: "constructeurs",
+          question: "8. Les méthodes sont également appelées des_______?",
+          answers: [
+            "fonctions membres",
+            "méthodes",
+            "propriétés",
+            "tous les réponses sont vrais"
+          ],
           answer: 1
         },
         {
-          question: " Quelle mot-clé empêche une méthode d’être redéfinie par une classe file?",
-          choice1: "abstract", 
-          choice2: "protected", 
-          choice3: "final", 
-          choice4: "static",
-          answer: 3
+          question: "8. Quelle mot-clé empêche une méthode d’être redéfinie par une classe file?",
+          answers: [
+            "final",
+            "static",
+            "const",
+            "abstract"
+          ],
+          answer: 1
         },
         {
-          question: "Nous pouvons utiliser ___ pour commenter une seule ligne?",
-          choice1: "/?", 
-          choice2: "#", 
-          choice3: "//", 
-          choice4: "/* */",
+          question: "9. Nous pouvons utiliser ___ pour commenter une seule ligne?",
+          answers: [
+            "/* */",
+            "#",
+            "//",
+            "tous les réponses sont vrais"
+          ],
           answer: 3
         }
       ];

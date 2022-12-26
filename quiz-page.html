@@ -9,7 +9,7 @@
     <title>QUIZ</title>
 </head>
 <body>
-    <nav class=" nav_img">
+      <nav class=" nav_img">
   
         <img  class="ntientimg" src="/image/ea9bc1d8fec601530239c4c0278afd77-removebg-preview.png" alt="" srcset="">
       </nav>
@@ -39,9 +39,24 @@
       </div>
 
       <!-- Quiz Section -->
-      <div class="quiz-container" id="quiz">
-        <div class="quiz-header"></div>
-      </div>
-      <script src="/script/script.js"></script>
+      <div  id="quiz">
+        <div class="quiz-header">
+          <h2>Quiz</h2>
+          <div id="timer">
+            <h2 id="time">00</h2>
+          </div>
+        </div>
+          <!-- Questions -->
+          <div  id="question">
+          </div>
+          <div onclick="" id="questionText">
+          </div>
+        </div>
+      <audio autoplay>
+        <source src="audio/song.mp3" type="audio/mpeg">
+      </audio>
+    <script src="/script/data.js"></script>
+    <script src="/script/script.js"></script>
+
 </body>
 </html>

@@ -79,6 +79,8 @@ body {
     font-size:20px;
     color:#fffcfc;
     margin-top: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   // contour du depart
@@ -94,10 +96,10 @@ body {
     font-size:20px;
     height: auto;
     width:550px;
-    background: #aab50c;
+    background: #ffffff86;
     border-radius: 20px;
-    margin-top: 15%;
-    // display: none;
+    margin-top: 12%;
+    display: none;
     h2{
     text-align: center;
     color:#3F0071
@@ -132,3 +134,72 @@ body {
       }      
     }
  }
+
+//  design du quiz section
+#quiz{
+  // display: none;
+  background: #ffffff7b;  
+  margin-top: 12%;
+  border-radius: 20px;
+  .quiz-header{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    h2{
+      font-size: 30px;
+      Color: #3F0071;
+      margin: 0 20px;
+    }
+    #timer{ 
+      display: flex;
+      flex-direction: row;
+      position:absolute;
+      right: 0;
+       #time{
+        font-size: 30px;
+        color:white;
+        margin: 0 20px;
+    }
+  }
+ }
+ #question{
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+    margin: 0 20px;
+    user-select: none;
+ }
+ #questionText{
+   font-size: 16px;
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  grid-template-columns: auto auto;
+  gap: 20% 0%;
+  .form-check{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+    height: 80px;
+    width: 100px;
+    margin: 0 20px;
+    background: #a600ff;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    gap: 10px;
+   }
+  }
+}
+.correct{
+  background-color: #00ff00 !important;
+}
+.incorrect{
+  background-color: #ff0000 !important;
+}

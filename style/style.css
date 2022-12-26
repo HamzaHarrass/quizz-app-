@@ -76,6 +76,8 @@ p {
   font-size: 20px;
   color: #fffcfc;
   margin-top: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #secondsdisplay {
@@ -89,9 +91,10 @@ p {
   font-size: 20px;
   height: auto;
   width: 550px;
-  background: #aab50c;
+  background: rgba(255, 255, 255, 0.5254901961);
   border-radius: 20px;
-  margin-top: 15%;
+  margin-top: 12%;
+  display: none;
 }
 #guide h2 {
   text-align: center;
@@ -125,4 +128,79 @@ p {
   width: 50px;
   text-align: center;
   cursor: pointer;
+}
+
+#quiz {
+  background: rgba(255, 255, 255, 0.4823529412);
+  margin-top: 12%;
+  border-radius: 20px;
+}
+#quiz .quiz-header {
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+}
+#quiz .quiz-header h2 {
+  font-size: 30px;
+  Color: #3F0071;
+  margin: 0 20px;
+}
+#quiz .quiz-header #timer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+}
+#quiz .quiz-header #timer #time {
+  font-size: 30px;
+  color: white;
+  margin: 0 20px;
+}
+#quiz #question {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  margin: 0 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#quiz #questionText {
+  font-size: 16px;
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 10px;
+  margin-top: 20px;
+  display: flex;
+  grid-template-columns: auto auto;
+  gap: 20% 0%;
+}
+#quiz #questionText .form-check {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  height: 80px;
+  width: 100px;
+  margin: 0 20px;
+  background: #a600ff;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+}
+
+.correct {
+  background-color: #00ff00 !important;
+}
+
+.incorrect {
+  background-color: #ff0000 !important;
 }/*# sourceMappingURL=style.css.map */
