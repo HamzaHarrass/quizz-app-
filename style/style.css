@@ -11,10 +11,11 @@ body {
 .ntientimg {
   position: relative;
   z-index: 1;
-  width: 40%;
+  width: 5%;
 }
 
 .nav_img {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -75,7 +76,7 @@ p {
   text-align: center;
   font-size: 20px;
   color: #fffcfc;
-  margin-top: 70px;
+  margin-top: 100px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -94,7 +95,6 @@ p {
   background: rgba(255, 255, 255, 0.5254901961);
   border-radius: 20px;
   margin-top: 12%;
-  display: none;
 }
 #guide h2 {
   text-align: center;
@@ -131,6 +131,7 @@ p {
 }
 
 #quiz {
+  display: none;
   background: rgba(255, 255, 255, 0.4823529412);
   margin-top: 12%;
   border-radius: 20px;
@@ -203,4 +204,27 @@ p {
 
 .incorrect {
   background-color: #ff0000 !important;
+}
+
+#result {
+  display: none;
+  font-size: 20px;
+  height: auto;
+  width: 550px;
+  background: rgba(255, 255, 255, 0.5254901961);
+  border-radius: 20px;
+  margin-top: 12%;
+}
+#result h2 {
+  text-align: center;
+  color: #3F0071;
+}
+#result #ScoreImage {
+  position: relative;
+  z-index: 1;
+}
+#result #ScoreImage #imagescore {
+  width: 30%;
+  display: flex;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */

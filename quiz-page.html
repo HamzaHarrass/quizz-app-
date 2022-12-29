@@ -9,10 +9,9 @@
     <title>QUIZ</title>
 </head>
 <body>
-      <nav class=" nav_img">
-  
-        <img  class="ntientimg" src="/image/ea9bc1d8fec601530239c4c0278afd77-removebg-preview.png" alt="" srcset="">
-      </nav>
+  <nav class=" nav_img">
+    <img  class="ntientimg" src="/image/ea9bc1d8fec601530239c4c0278afd77.png" alt="" srcset="">
+  </nav>
       
       <div class="custom-shape-divider-top-1671480786">
         <svg  viewBox="0 0 1200 200" preserveAspectRatio="none">
@@ -30,12 +29,13 @@
         <h4>3.you can't Exit from the quiz while you are playing</h4>
         <div id="boutton">
           <bouton id="exit" href="index.html">Exit</bouton>
-          <bouton id="play">Play</bouton>
+          <bouton id="play" onclick="play">Play</bouton>
         </div>
       </div>
 
       <!-- contour -->
       <div id="secondsdisplay">
+        <img id="image" src="" alt="">
       </div>
 
       <!-- Quiz Section -->
@@ -52,9 +52,13 @@
           <div onclick="" id="questionText">
           </div>
         </div>
-      <audio autoplay>
-        <source src="audio/song.mp3" type="audio/mpeg">
-      </audio>
+        <!-- score -->
+        <div id="result">
+          <h2>Score</h2>
+          <div id="ScoreImage"></div>
+          <h2 id="resultText">0</h2>
+        </div>
+
     <script src="/script/data.js"></script>
     <script src="/script/script.js"></script>
 
