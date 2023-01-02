@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="ICON" href="./image/ea9bc1d8fec601530239c4c0278afd77-removebg-preview.png" type="image/ico" />
+    <link rel="ICON" href="image/ea9bc1d8fec601530239c4c0278afd77.png" type="image/ico" />
     <link rel="stylesheet" href="./style/style.css">
     <title>QUIZ</title>
 </head>
 <body>
   <nav class=" nav_img">
-    <img  class="ntientimg" src="/image/ea9bc1d8fec601530239c4c0278afd77.png" alt="" srcset="">
+  <img  class="ntientimg" src="image/ea9bc1d8fec601530239c4c0278afd77.png" alt="" srcset="">
   </nav>
       
       <div class="custom-shape-divider-top-1671480786">
@@ -24,11 +24,12 @@
       <!-- guide Section -->
       <div id="guide">
         <h2>Quiz Guide</h2>
-        <h4>1. once you select you answer it can't be undone</h4>
-        <h4>2. you'il get pointd on the basic of your correct answers</h4>
-        <h4>3.you can't Exit from the quiz while you are playing</h4>
+        <h4>1. You have <cite class="text-yellow" style="color:yellow">30 seconds</cite> per each question</h4>
+        <h4>2. once you select you answer it can't be undone</h4>
+        <h4>3. you'il get pointd on the basic of your correct answers</h4>
+        <h4>4. you can't Exit from the quiz while you are playing</h4>
         <div id="boutton">
-          <bouton id="exit" href="index.html">Exit</bouton>
+          <bouton id="exit" href="index.php">Exit</bouton>
           <bouton id="play" onclick="play">Play</bouton>
         </div>
       </div>
@@ -59,8 +60,8 @@
           <h2 id="resultText">0</h2>
         </div>
 
-    <script src="/script/data.js"></script>
-    <script src="/script/script.js"></script>
+    <!-- <script src="/script/data.js"></script> -->
+    <script src="./script/script.js"></script>
 
 </body>
 </html>

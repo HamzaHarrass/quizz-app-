@@ -120,6 +120,10 @@ p {
   text-align: center;
   cursor: pointer;
 }
+#guide #boutton #exit:hover {
+  background-color: rgba(242, 237, 237, 0.5921568627);
+  color: yellow;
+}
 #guide #boutton #play {
   background-color: #3F0071;
   color: white;
@@ -128,6 +132,10 @@ p {
   width: 50px;
   text-align: center;
   cursor: pointer;
+}
+#guide #boutton #play:hover {
+  background-color: rgba(242, 237, 237, 0.5921568627);
+  color: yellow;
 }
 
 #quiz {
@@ -230,8 +238,27 @@ p {
 }
 
 .container {
-  margin-top: 35%;
-  display: flex;
-  justify-content: center;
-  gap: 30%;
+  font-size: 20px;
+  height: auto;
+  width: 550px;
+  border-radius: 20px;
+  margin-top: 45%;
+}
+.container #login {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5254901961);
+  border-radius: 20px;
+}
+.container #login h1 {
+  text-align: center;
+  color: #3F0071;
+}
+.container #singup {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5254901961);
+  border-radius: 20px;
+}
+.container #singup h1 {
+  text-align: center;
+  color: #3F0071;
 }/*# sourceMappingURL=style.css.map */

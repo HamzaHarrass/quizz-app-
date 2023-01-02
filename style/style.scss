@@ -121,6 +121,10 @@ body {
         padding:5px;
         width: 50px;
         text-align: center;
+        &:hover{
+          background-color:#f2eded97;
+          color: yellow;
+        }
         cursor: pointer;
             }
       #play{
@@ -131,6 +135,10 @@ body {
         width: 50px;
         text-align: center;
         cursor:pointer;
+        &:hover{
+          background-color:#f2eded97;
+          color: yellow;
+        }
       }      
     }
  }
@@ -228,11 +236,29 @@ body {
     }
   }
 }
-
 .container{
-  margin-top: 35%;
-  display: flex;
-  justify-content: center;
-  gap: 30%;
+  font-size:20px;
+  height: auto;
+  width:550px;
+  border-radius: 20px;
+  margin-top: 45%; 
   
+  #login{
+    text-align: center;
+    background: #ffffff86;    
+    border-radius: 20px;
+    h1{
+      text-align: center;
+      color:#3F0071
+    }
+}
+#singup{
+  text-align: center;
+  background: #ffffff86;    
+  border-radius: 20px;
+  h1{
+    text-align: center;
+    color:#3F0071
+  }
+}
 }

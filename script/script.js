@@ -1,3 +1,17 @@
+var questions;
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "./view/DataView.php", false);
+xhr.onreadystatechange = function () {
+  if (this.status == 200 && this.readyState == 4) {
+    var data = JSON.parse(this.responseText);
+    // console.log(data);
+    questions = data;
+  }
+};
+xhr.send();
+              
+console.log(questions);
+
 
 var counter = 6;
 let index = 0;
@@ -54,6 +68,7 @@ function contour (){
   document.getElementById("secondsdisplay").innerHTML = counter;
      
   if ( counter==0) {
+    console.log("hhhh")
     displayData(index);
     clearInterval(x);  
     guide.style.display="none";
@@ -90,19 +105,19 @@ if(index === sizeData-1){
   guide.style.display="none";
   document.getElementById("resultText").innerHTML = "Your score is " + correctScore + "%";
   if(correctScore >= 80){
-    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='/image/5741045a1aa1e15c70ca1dce56cac1ab.png' alt='good'>"
+    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='image/5741045a1aa1e15c70ca1dce56cac1ab.png' alt='good'>"
     document.getElementById("resultText").innerHTML += "<br> You are a genius";
   }
   else if(correctScore >= 60){
-    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='/image/3dc46683ec3f6b87da2bb4b78fde993b.png' alt='good'>"
+    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='image/3dc46683ec3f6b87da2bb4b78fde993b.png' alt='good'>"
     document.getElementById("resultText").innerHTML += "<br> You are a good";
   }
   else if(correctScore >= 40){
-    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='/image/320c3a3f9874895654bf3a943cc2851f.png' alt='good'>"
+    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='image/320c3a3f9874895654bf3a943cc2851f.png' alt='good'>"
     document.getElementById("resultText").innerHTML += "<br> You are a bad";
   }
   else{
-    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='/image/e4723fb64b1ca543e5cde39d47ed933a.png ' alt='good'>"
+    document.getElementById("ScoreImage").innerHTML ="<img id='imagescore' src='image/e4723fb64b1ca543e5cde39d47ed933a.png ' alt='good'>"
     document.getElementById("resultText").innerHTML += "<br> You are a very bad";
   }
 }
@@ -125,6 +140,8 @@ function getAnswer(choice){
   if(answer == correctAnswer){
     console.log("correct");
      console.log(choice.classList);
+    choice.classList.add('correct');
+
      playAudioCorrect();
     correctScore += 100/sizeData; // ( 1/sizedata ) * 100
   }
@@ -139,15 +156,17 @@ function getAnswer(choice){
   }
   setTimeout(function(){
     index++;
-    displayData(index)}, 6000);
+    displayData(index)}, 4000);
 }
 
 // function song correct and wrong
 function playAudioIncorrect(){
-  var audio = new Audio('audio/Among Us Impostor Sound Effect.mp3');
+  let audio = new Audio('audio/Among Us Impostor Sound Effect.mp3');
   audio.play();
+  audio.volume = 0.5;
 }
 function playAudioCorrect(){
   var audio = new Audio('audio/Among Us Sound Effect.mp3');
   audio.play();
+  volume = 1;
 }
